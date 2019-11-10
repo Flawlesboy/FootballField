@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12DF8912F38A559424443760 /* Pods_FootballField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F68FEB23A17C8C08939E07 /* Pods_FootballField.framework */; };
+		EB0FC8CC237084050056C2C2 /* FootballFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FC8CB237084050056C2C2 /* FootballFieldTableViewCell.swift */; };
+		EB108FCC236DE0E700EB4D31 /* FootballFieldListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB108FCB236DE0E700EB4D31 /* FootballFieldListDataSource.swift */; };
+		EB12DFE42374A16D0094F92A /* FootballFieldDetailViewDataSourceOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12DFE32374A16D0094F92A /* FootballFieldDetailViewDataSourceOutput.swift */; };
+		EB1B01772372FACD00509AD1 /* FootballFieldDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1B01762372FACD00509AD1 /* FootballFieldDetailView.swift */; };
+		EB1B01792372FB5F00509AD1 /* FootballFieldDetailViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1B01782372FB5F00509AD1 /* FootballFieldDetailViewInput.swift */; };
+		EB1B017B2372FB8100509AD1 /* FootballFieldDetailViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1B017A2372FB8100509AD1 /* FootballFieldDetailViewOutput.swift */; };
+		EB1B017D2372FBAC00509AD1 /* FootballFieldDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1B017C2372FBAC00509AD1 /* FootballFieldDetailRouter.swift */; };
+		EB1B017F2372FBD300509AD1 /* FootballFieldDetailRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1B017E2372FBD300509AD1 /* FootballFieldDetailRouterInput.swift */; };
+		EB1B01812372FBEB00509AD1 /* FootballFieldDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1B01802372FBEB00509AD1 /* FootballFieldDetailPresenter.swift */; };
+		EB1B01832372FC0400509AD1 /* FootballFieldDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1B01822372FC0400509AD1 /* FootballFieldDetailInteractor.swift */; };
+		EB1B01852372FC2A00509AD1 /* FootballFieldDetailInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1B01842372FC2A00509AD1 /* FootballFieldDetailInteractorInput.swift */; };
+		EB1B01872372FC4900509AD1 /* FootballFieldDetailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1B01862372FC4900509AD1 /* FootballFieldDetailInteractorOutput.swift */; };
+		EB1B01892372FD7600509AD1 /* FootballFieldDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1B01882372FD7600509AD1 /* FootballFieldDetailAssembly.swift */; };
+		EB1B018B2373055B00509AD1 /* FootballFieldListDataSourceOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1B018A2373055B00509AD1 /* FootballFieldListDataSourceOutput.swift */; };
+		EB1B018E237328CF00509AD1 /* FootballFieldDetailViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1B018D237328CF00509AD1 /* FootballFieldDetailViewDataSource.swift */; };
+		EB1B0191237359AB00509AD1 /* FootballFieldDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1B0190237359AB00509AD1 /* FootballFieldDetailCollectionViewCell.swift */; };
+		EB1FC7E12375DA23007758C3 /* MapFootballFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FC7E02375DA23007758C3 /* MapFootballFieldView.swift */; };
+		EB1FC7E32375DA39007758C3 /* MapFootballFieldViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FC7E22375DA39007758C3 /* MapFootballFieldViewInput.swift */; };
+		EB1FC7E52375DA54007758C3 /* MapFootballFieldViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FC7E42375DA54007758C3 /* MapFootballFieldViewOutput.swift */; };
+		EB1FC7E72375DA80007758C3 /* MapFootballFieldRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FC7E62375DA80007758C3 /* MapFootballFieldRouter.swift */; };
+		EB1FC7E92375DA9C007758C3 /* MapFootballFieldRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FC7E82375DA9C007758C3 /* MapFootballFieldRouterInput.swift */; };
+		EB1FC7EB2375DABA007758C3 /* MapFootballFieldPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FC7EA2375DABA007758C3 /* MapFootballFieldPresenter.swift */; };
+		EB1FC7ED2375DADD007758C3 /* MapFootballFieldInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FC7EC2375DADD007758C3 /* MapFootballFieldInteractor.swift */; };
+		EB1FC7EF2375DAEF007758C3 /* MapFootballFieldInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FC7EE2375DAEF007758C3 /* MapFootballFieldInteractorInput.swift */; };
+		EB1FC7F12375DB16007758C3 /* MapFootballFieldInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FC7F02375DB16007758C3 /* MapFootballFieldInteractorOutput.swift */; };
+		EB1FC7F32375E407007758C3 /* MapFootballFieldAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FC7F22375E407007758C3 /* MapFootballFieldAssembly.swift */; };
+		EB359FB0236F51EA00789FDB /* FootballFIeld.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB359FAF236F51EA00789FDB /* FootballFIeld.swift */; };
+		EB5D51D2236D9C770046E587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D51D1236D9C770046E587 /* AppDelegate.swift */; };
+		EB5D51D7236D9C770046E587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5D51D5236D9C770046E587 /* Main.storyboard */; };
+		EB5D51DA236D9C770046E587 /* FootballField.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB5D51D8236D9C770046E587 /* FootballField.xcdatamodeld */; };
+		EB5D51DC236D9C790046E587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5D51DB236D9C790046E587 /* Assets.xcassets */; };
+		EB5D51DF236D9C790046E587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5D51DD236D9C790046E587 /* LaunchScreen.storyboard */; };
+		EB5D51F1236DAE890046E587 /* FootballFieldListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D51F0236DAE890046E587 /* FootballFieldListView.swift */; };
+		EB5D51F3236DAEB30046E587 /* FootballFieldListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D51F2236DAEB30046E587 /* FootballFieldListViewInput.swift */; };
+		EB5D51F5236DAEC60046E587 /* FootballFieldListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D51F4236DAEC60046E587 /* FootballFieldListViewOutput.swift */; };
+		EB5D51F7236DAEED0046E587 /* FootballFieldListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D51F6236DAEED0046E587 /* FootballFieldListRouter.swift */; };
+		EB5D51F9236DAFD80046E587 /* FootballFieldListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D51F8236DAFD80046E587 /* FootballFieldListRouterInput.swift */; };
+		EB5D51FB236DAFF10046E587 /* FootballFieldListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D51FA236DAFF10046E587 /* FootballFieldListPresenter.swift */; };
+		EB5D51FD236DB0070046E587 /* FootballFieldListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D51FC236DB0070046E587 /* FootballFieldListInteractor.swift */; };
+		EB5D51FF236DB0150046E587 /* FootballFieldListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D51FE236DB0150046E587 /* FootballFieldListInteractorInput.swift */; };
+		EB5D5201236DB0220046E587 /* FootballFieldListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D5200236DB0220046E587 /* FootballFieldListInteractorOutput.swift */; };
+		EB5D5203236DB0830046E587 /* FootballFieldListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D5202236DB0830046E587 /* FootballFieldListAssembly.swift */; };
+		EB5D5205236DB65B0046E587 /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D5204236DB65B0046E587 /* TransitionHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3AFBDF14808952203898C5F0 /* Pods-FootballField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootballField.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FootballField/Pods-FootballField.debug.xcconfig"; sourceTree = "<group>"; };
+		98F68FEB23A17C8C08939E07 /* Pods_FootballField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FootballField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E447F5DCDCF4406CF30FE73F /* Pods-FootballField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootballField.release.xcconfig"; path = "Pods/Target Support Files/Pods-FootballField/Pods-FootballField.release.xcconfig"; sourceTree = "<group>"; };
+		EB0FC8CB237084050056C2C2 /* FootballFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldTableViewCell.swift; sourceTree = "<group>"; };
+		EB108FCB236DE0E700EB4D31 /* FootballFieldListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldListDataSource.swift; sourceTree = "<group>"; };
+		EB12DFE32374A16D0094F92A /* FootballFieldDetailViewDataSourceOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldDetailViewDataSourceOutput.swift; sourceTree = "<group>"; };
+		EB1B01762372FACD00509AD1 /* FootballFieldDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldDetailView.swift; sourceTree = "<group>"; };
+		EB1B01782372FB5F00509AD1 /* FootballFieldDetailViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldDetailViewInput.swift; sourceTree = "<group>"; };
+		EB1B017A2372FB8100509AD1 /* FootballFieldDetailViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldDetailViewOutput.swift; sourceTree = "<group>"; };
+		EB1B017C2372FBAC00509AD1 /* FootballFieldDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldDetailRouter.swift; sourceTree = "<group>"; };
+		EB1B017E2372FBD300509AD1 /* FootballFieldDetailRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldDetailRouterInput.swift; sourceTree = "<group>"; };
+		EB1B01802372FBEB00509AD1 /* FootballFieldDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldDetailPresenter.swift; sourceTree = "<group>"; };
+		EB1B01822372FC0400509AD1 /* FootballFieldDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldDetailInteractor.swift; sourceTree = "<group>"; };
+		EB1B01842372FC2A00509AD1 /* FootballFieldDetailInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldDetailInteractorInput.swift; sourceTree = "<group>"; };
+		EB1B01862372FC4900509AD1 /* FootballFieldDetailInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldDetailInteractorOutput.swift; sourceTree = "<group>"; };
+		EB1B01882372FD7600509AD1 /* FootballFieldDetailAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldDetailAssembly.swift; sourceTree = "<group>"; };
+		EB1B018A2373055B00509AD1 /* FootballFieldListDataSourceOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldListDataSourceOutput.swift; sourceTree = "<group>"; };
+		EB1B018D237328CF00509AD1 /* FootballFieldDetailViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldDetailViewDataSource.swift; sourceTree = "<group>"; };
+		EB1B0190237359AB00509AD1 /* FootballFieldDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB1FC7E02375DA23007758C3 /* MapFootballFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFootballFieldView.swift; sourceTree = "<group>"; };
+		EB1FC7E22375DA39007758C3 /* MapFootballFieldViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFootballFieldViewInput.swift; sourceTree = "<group>"; };
+		EB1FC7E42375DA54007758C3 /* MapFootballFieldViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFootballFieldViewOutput.swift; sourceTree = "<group>"; };
+		EB1FC7E62375DA80007758C3 /* MapFootballFieldRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFootballFieldRouter.swift; sourceTree = "<group>"; };
+		EB1FC7E82375DA9C007758C3 /* MapFootballFieldRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFootballFieldRouterInput.swift; sourceTree = "<group>"; };
+		EB1FC7EA2375DABA007758C3 /* MapFootballFieldPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFootballFieldPresenter.swift; sourceTree = "<group>"; };
+		EB1FC7EC2375DADD007758C3 /* MapFootballFieldInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFootballFieldInteractor.swift; sourceTree = "<group>"; };
+		EB1FC7EE2375DAEF007758C3 /* MapFootballFieldInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFootballFieldInteractorInput.swift; sourceTree = "<group>"; };
+		EB1FC7F02375DB16007758C3 /* MapFootballFieldInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFootballFieldInteractorOutput.swift; sourceTree = "<group>"; };
+		EB1FC7F22375E407007758C3 /* MapFootballFieldAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFootballFieldAssembly.swift; sourceTree = "<group>"; };
+		EB359FAF236F51EA00789FDB /* FootballFIeld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFIeld.swift; sourceTree = "<group>"; };
+		EB5D51CE236D9C770046E587 /* FootballField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB5D51D1236D9C770046E587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB5D51D6236D9C770046E587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB5D51D9236D9C770046E587 /* FootballField.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FootballField.xcdatamodel; sourceTree = "<group>"; };
+		EB5D51DB236D9C790046E587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB5D51DE236D9C790046E587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB5D51E0236D9C790046E587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB5D51F0236DAE890046E587 /* FootballFieldListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldListView.swift; sourceTree = "<group>"; };
+		EB5D51F2236DAEB30046E587 /* FootballFieldListViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldListViewInput.swift; sourceTree = "<group>"; };
+		EB5D51F4236DAEC60046E587 /* FootballFieldListViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldListViewOutput.swift; sourceTree = "<group>"; };
+		EB5D51F6236DAEED0046E587 /* FootballFieldListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldListRouter.swift; sourceTree = "<group>"; };
+		EB5D51F8236DAFD80046E587 /* FootballFieldListRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldListRouterInput.swift; sourceTree = "<group>"; };
+		EB5D51FA236DAFF10046E587 /* FootballFieldListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldListPresenter.swift; sourceTree = "<group>"; };
+		EB5D51FC236DB0070046E587 /* FootballFieldListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldListInteractor.swift; sourceTree = "<group>"; };
+		EB5D51FE236DB0150046E587 /* FootballFieldListInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldListInteractorInput.swift; sourceTree = "<group>"; };
+		EB5D5200236DB0220046E587 /* FootballFieldListInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldListInteractorOutput.swift; sourceTree = "<group>"; };
+		EB5D5202236DB0830046E587 /* FootballFieldListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballFieldListAssembly.swift; sourceTree = "<group>"; };
+		EB5D5204236DB65B0046E587 /* TransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB5D51CB236D9C770046E587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12DF8912F38A559424443760 /* Pods_FootballField.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0062955BCC13E16B3BCF1FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AFBDF14808952203898C5F0 /* Pods-FootballField.debug.xcconfig */,
+				E447F5DCDCF4406CF30FE73F /* Pods-FootballField.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC7DFB6122C8A1A97A4C3561 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98F68FEB23A17C8C08939E07 /* Pods_FootballField.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB0FC8CA237083BF0056C2C2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EB0FC8CB237084050056C2C2 /* FootballFieldTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EB0FE84F2372256A00F9643C /* FootballFieldDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EB0FE8542372259D00F9643C /* Assembly */,
+				EB0FE8532372259100F9643C /* Interactor */,
+				EB0FE8522372258A00F9643C /* Presenter */,
+				EB0FE8512372258500F9643C /* Router */,
+				EB0FE8502372257D00F9643C /* View */,
+			);
+			path = FootballFieldDetail;
+			sourceTree = "<group>";
+		};
+		EB0FE8502372257D00F9643C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB1B018C237328B200509AD1 /* FootballFieldDetailViewDataSource */,
+				EB1B01762372FACD00509AD1 /* FootballFieldDetailView.swift */,
+				EB1B01782372FB5F00509AD1 /* FootballFieldDetailViewInput.swift */,
+				EB1B017A2372FB8100509AD1 /* FootballFieldDetailViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB0FE8512372258500F9643C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EB1B017C2372FBAC00509AD1 /* FootballFieldDetailRouter.swift */,
+				EB1B017E2372FBD300509AD1 /* FootballFieldDetailRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EB0FE8522372258A00F9643C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB1B01802372FBEB00509AD1 /* FootballFieldDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EB0FE8532372259100F9643C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB1B01822372FC0400509AD1 /* FootballFieldDetailInteractor.swift */,
+				EB1B01842372FC2A00509AD1 /* FootballFieldDetailInteractorInput.swift */,
+				EB1B01862372FC4900509AD1 /* FootballFieldDetailInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EB0FE8542372259D00F9643C /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EB1B01882372FD7600509AD1 /* FootballFieldDetailAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		EB108FCA236DE05500EB4D31 /* FootballFieldListDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EB0FC8CA237083BF0056C2C2 /* Cell */,
+				EB359FAF236F51EA00789FDB /* FootballFIeld.swift */,
+				EB1B018A2373055B00509AD1 /* FootballFieldListDataSourceOutput.swift */,
+				EB108FCB236DE0E700EB4D31 /* FootballFieldListDataSource.swift */,
+			);
+			path = FootballFieldListDataSource;
+			sourceTree = "<group>";
+		};
+		EB1B018C237328B200509AD1 /* FootballFieldDetailViewDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EB1B018F2373598000509AD1 /* Cell */,
+				EB12DFE32374A16D0094F92A /* FootballFieldDetailViewDataSourceOutput.swift */,
+				EB1B018D237328CF00509AD1 /* FootballFieldDetailViewDataSource.swift */,
+			);
+			path = FootballFieldDetailViewDataSource;
+			sourceTree = "<group>";
+		};
+		EB1B018F2373598000509AD1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EB1B0190237359AB00509AD1 /* FootballFieldDetailCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EB1FC7DA2375D93F007758C3 /* MapFootballField */ = {
+			isa = PBXGroup;
+			children = (
+				EB1FC7DF2375D9F1007758C3 /* Assembly */,
+				EB1FC7DE2375D9E7007758C3 /* Interactor */,
+				EB1FC7DD2375D9D2007758C3 /* Presenter */,
+				EB1FC7DC2375D9CD007758C3 /* Router */,
+				EB1FC7DB2375D9C3007758C3 /* View */,
+			);
+			path = MapFootballField;
+			sourceTree = "<group>";
+		};
+		EB1FC7DB2375D9C3007758C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB1FC7E02375DA23007758C3 /* MapFootballFieldView.swift */,
+				EB1FC7E22375DA39007758C3 /* MapFootballFieldViewInput.swift */,
+				EB1FC7E42375DA54007758C3 /* MapFootballFieldViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB1FC7DC2375D9CD007758C3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EB1FC7E62375DA80007758C3 /* MapFootballFieldRouter.swift */,
+				EB1FC7E82375DA9C007758C3 /* MapFootballFieldRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EB1FC7DD2375D9D2007758C3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB1FC7EA2375DABA007758C3 /* MapFootballFieldPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EB1FC7DE2375D9E7007758C3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB1FC7EC2375DADD007758C3 /* MapFootballFieldInteractor.swift */,
+				EB1FC7EE2375DAEF007758C3 /* MapFootballFieldInteractorInput.swift */,
+				EB1FC7F02375DB16007758C3 /* MapFootballFieldInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EB1FC7DF2375D9F1007758C3 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EB1FC7F22375E407007758C3 /* MapFootballFieldAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		EB5D51C5236D9C760046E587 = {
+			isa = PBXGroup;
+			children = (
+				EB5D51D0236D9C770046E587 /* FootballField */,
+				EB5D51CF236D9C770046E587 /* Products */,
+				D0062955BCC13E16B3BCF1FB /* Pods */,
+				DC7DFB6122C8A1A97A4C3561 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB5D51CF236D9C770046E587 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB5D51CE236D9C770046E587 /* FootballField.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB5D51D0236D9C770046E587 /* FootballField */ = {
+			isa = PBXGroup;
+			children = (
+				EB5D51D1236D9C770046E587 /* AppDelegate.swift */,
+				EB5D51E8236DA82A0046E587 /* PresentionLayer */,
+				EB5D51E7236DA8130046E587 /* ServiceLayer */,
+				EB5D51E6236DA8050046E587 /* CoreLayer */,
+				EB5D51D5236D9C770046E587 /* Main.storyboard */,
+				EB5D51DB236D9C790046E587 /* Assets.xcassets */,
+				EB5D51DD236D9C790046E587 /* LaunchScreen.storyboard */,
+				EB5D51E0236D9C790046E587 /* Info.plist */,
+				EB5D51D8236D9C770046E587 /* FootballField.xcdatamodeld */,
+			);
+			path = FootballField;
+			sourceTree = "<group>";
+		};
+		EB5D51E6236DA8050046E587 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		EB5D51E7236DA8130046E587 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		EB5D51E8236DA82A0046E587 /* PresentionLayer */ = {
+			isa = PBXGroup;
+			children = (
+				EB5D51E9236DA83B0046E587 /* Modules */,
+			);
+			path = PresentionLayer;
+			sourceTree = "<group>";
+		};
+		EB5D51E9236DA83B0046E587 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EB5D5204236DB65B0046E587 /* TransitionHandler.swift */,
+				EB1FC7DA2375D93F007758C3 /* MapFootballField */,
+				EB0FE84F2372256A00F9643C /* FootballFieldDetail */,
+				EB5D51EA236DA9AC0046E587 /* FootballFieldList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EB5D51EA236DA9AC0046E587 /* FootballFieldList */ = {
+			isa = PBXGroup;
+			children = (
+				EB5D51EF236DAE5D0046E587 /* Assembly */,
+				EB5D51EE236DAE550046E587 /* Interactor */,
+				EB5D51ED236DAE4D0046E587 /* Presenter */,
+				EB5D51EC236DAE460046E587 /* Router */,
+				EB5D51EB236DAE3E0046E587 /* View */,
+			);
+			path = FootballFieldList;
+			sourceTree = "<group>";
+		};
+		EB5D51EB236DAE3E0046E587 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB108FCA236DE05500EB4D31 /* FootballFieldListDataSource */,
+				EB5D51F0236DAE890046E587 /* FootballFieldListView.swift */,
+				EB5D51F2236DAEB30046E587 /* FootballFieldListViewInput.swift */,
+				EB5D51F4236DAEC60046E587 /* FootballFieldListViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB5D51EC236DAE460046E587 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EB5D51F6236DAEED0046E587 /* FootballFieldListRouter.swift */,
+				EB5D51F8236DAFD80046E587 /* FootballFieldListRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EB5D51ED236DAE4D0046E587 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB5D51FA236DAFF10046E587 /* FootballFieldListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EB5D51EE236DAE550046E587 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB5D51FC236DB0070046E587 /* FootballFieldListInteractor.swift */,
+				EB5D51FE236DB0150046E587 /* FootballFieldListInteractorInput.swift */,
+				EB5D5200236DB0220046E587 /* FootballFieldListInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EB5D51EF236DAE5D0046E587 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EB5D5202236DB0830046E587 /* FootballFieldListAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB5D51CD236D9C770046E587 /* FootballField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB5D51E3236D9C790046E587 /* Build configuration list for PBXNativeTarget "FootballField" */;
+			buildPhases = (
+				B22F1335E420F63DD0F2D750 /* [CP] Check Pods Manifest.lock */,
+				EB5D51CA236D9C770046E587 /* Sources */,
+				EB5D51CB236D9C770046E587 /* Frameworks */,
+				EB5D51CC236D9C770046E587 /* Resources */,
+				8149A5550006DCD56602EBD1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FootballField;
+			productName = FootballField;
+			productReference = EB5D51CE236D9C770046E587 /* FootballField.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB5D51C6236D9C760046E587 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Загид Гусейнов";
+				TargetAttributes = {
+					EB5D51CD236D9C770046E587 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = EB5D51C9236D9C760046E587 /* Build configuration list for PBXProject "FootballField" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB5D51C5236D9C760046E587;
+			productRefGroup = EB5D51CF236D9C770046E587 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB5D51CD236D9C770046E587 /* FootballField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB5D51CC236D9C770046E587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB5D51DF236D9C790046E587 /* LaunchScreen.storyboard in Resources */,
+				EB5D51DC236D9C790046E587 /* Assets.xcassets in Resources */,
+				EB5D51D7236D9C770046E587 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8149A5550006DCD56602EBD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FootballField/Pods-FootballField-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FlexiblePageControl/FlexiblePageControl.framework",
+				"${BUILT_PRODUCTS_DIR}/PryntTrimmerView/PryntTrimmerView.framework",
+				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
+				"${BUILT_PRODUCTS_DIR}/YPImagePicker/YPImagePicker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexiblePageControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PryntTrimmerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YPImagePicker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootballField/Pods-FootballField-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B22F1335E420F63DD0F2D750 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FootballField-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB5D51CA236D9C770046E587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1B01852372FC2A00509AD1 /* FootballFieldDetailInteractorInput.swift in Sources */,
+				EB5D51F3236DAEB30046E587 /* FootballFieldListViewInput.swift in Sources */,
+				EB1B017D2372FBAC00509AD1 /* FootballFieldDetailRouter.swift in Sources */,
+				EB5D51D2236D9C770046E587 /* AppDelegate.swift in Sources */,
+				EB1FC7ED2375DADD007758C3 /* MapFootballFieldInteractor.swift in Sources */,
+				EB5D51F5236DAEC60046E587 /* FootballFieldListViewOutput.swift in Sources */,
+				EB1B01832372FC0400509AD1 /* FootballFieldDetailInteractor.swift in Sources */,
+				EB1B018E237328CF00509AD1 /* FootballFieldDetailViewDataSource.swift in Sources */,
+				EB5D51FB236DAFF10046E587 /* FootballFieldListPresenter.swift in Sources */,
+				EB5D51FF236DB0150046E587 /* FootballFieldListInteractorInput.swift in Sources */,
+				EB1FC7E92375DA9C007758C3 /* MapFootballFieldRouterInput.swift in Sources */,
+				EB5D51F1236DAE890046E587 /* FootballFieldListView.swift in Sources */,
+				EB1FC7EF2375DAEF007758C3 /* MapFootballFieldInteractorInput.swift in Sources */,
+				EB5D51F9236DAFD80046E587 /* FootballFieldListRouterInput.swift in Sources */,
+				EB1FC7F32375E407007758C3 /* MapFootballFieldAssembly.swift in Sources */,
+				EB1B017B2372FB8100509AD1 /* FootballFieldDetailViewOutput.swift in Sources */,
+				EB1B0191237359AB00509AD1 /* FootballFieldDetailCollectionViewCell.swift in Sources */,
+				EB5D51DA236D9C770046E587 /* FootballField.xcdatamodeld in Sources */,
+				EB5D5201236DB0220046E587 /* FootballFieldListInteractorOutput.swift in Sources */,
+				EB1B017F2372FBD300509AD1 /* FootballFieldDetailRouterInput.swift in Sources */,
+				EB1B01872372FC4900509AD1 /* FootballFieldDetailInteractorOutput.swift in Sources */,
+				EB359FB0236F51EA00789FDB /* FootballFIeld.swift in Sources */,
+				EB0FC8CC237084050056C2C2 /* FootballFieldTableViewCell.swift in Sources */,
+				EB1B01772372FACD00509AD1 /* FootballFieldDetailView.swift in Sources */,
+				EB1B018B2373055B00509AD1 /* FootballFieldListDataSourceOutput.swift in Sources */,
+				EB5D51FD236DB0070046E587 /* FootballFieldListInteractor.swift in Sources */,
+				EB1FC7EB2375DABA007758C3 /* MapFootballFieldPresenter.swift in Sources */,
+				EB5D5205236DB65B0046E587 /* TransitionHandler.swift in Sources */,
+				EB1FC7E72375DA80007758C3 /* MapFootballFieldRouter.swift in Sources */,
+				EB1FC7E12375DA23007758C3 /* MapFootballFieldView.swift in Sources */,
+				EB1FC7F12375DB16007758C3 /* MapFootballFieldInteractorOutput.swift in Sources */,
+				EB5D51F7236DAEED0046E587 /* FootballFieldListRouter.swift in Sources */,
+				EB1FC7E52375DA54007758C3 /* MapFootballFieldViewOutput.swift in Sources */,
+				EB108FCC236DE0E700EB4D31 /* FootballFieldListDataSource.swift in Sources */,
+				EB1FC7E32375DA39007758C3 /* MapFootballFieldViewInput.swift in Sources */,
+				EB1B01892372FD7600509AD1 /* FootballFieldDetailAssembly.swift in Sources */,
+				EB1B01792372FB5F00509AD1 /* FootballFieldDetailViewInput.swift in Sources */,
+				EB5D5203236DB0830046E587 /* FootballFieldListAssembly.swift in Sources */,
+				EB1B01812372FBEB00509AD1 /* FootballFieldDetailPresenter.swift in Sources */,
+				EB12DFE42374A16D0094F92A /* FootballFieldDetailViewDataSourceOutput.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB5D51D5236D9C770046E587 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB5D51D6236D9C770046E587 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB5D51DD236D9C790046E587 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB5D51DE236D9C790046E587 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB5D51E1236D9C790046E587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB5D51E2236D9C790046E587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB5D51E4236D9C790046E587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AFBDF14808952203898C5F0 /* Pods-FootballField.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9M6JDTKFW3;
+				INFOPLIST_FILE = FootballField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = c.FootballField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB5D51E5236D9C790046E587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E447F5DCDCF4406CF30FE73F /* Pods-FootballField.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9M6JDTKFW3;
+				INFOPLIST_FILE = FootballField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = c.FootballField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB5D51C9236D9C760046E587 /* Build configuration list for PBXProject "FootballField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB5D51E1236D9C790046E587 /* Debug */,
+				EB5D51E2236D9C790046E587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB5D51E3236D9C790046E587 /* Build configuration list for PBXNativeTarget "FootballField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB5D51E4236D9C790046E587 /* Debug */,
+				EB5D51E5236D9C790046E587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB5D51D8236D9C770046E587 /* FootballField.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB5D51D9236D9C770046E587 /* FootballField.xcdatamodel */,
+			);
+			currentVersion = EB5D51D9236D9C770046E587 /* FootballField.xcdatamodel */;
+			path = FootballField.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB5D51C6236D9C760046E587 /* Project object */;
+}
