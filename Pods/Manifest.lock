@@ -1,28 +1,29 @@
 PODS:
   - FlexiblePageControl (1.0.8)
-  - PryntTrimmerView (3.0.0)
-  - SteviaLayout (4.4.4)
-  - YPImagePicker (4.0.0):
-    - PryntTrimmerView (~> 3.0.0)
-    - SteviaLayout (~> 4.4.1)
+  - GoogleMaps (3.3.0):
+    - GoogleMaps/Maps (= 3.3.0)
+  - GoogleMaps/Base (3.3.0)
+  - GoogleMaps/Maps (3.3.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.3.0):
+    - GoogleMaps/Base (= 3.3.0)
 
 DEPENDENCIES:
   - FlexiblePageControl
-  - YPImagePicker
+  - GoogleMaps
+  - GooglePlaces
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FlexiblePageControl
-    - PryntTrimmerView
-    - SteviaLayout
-    - YPImagePicker
+    - GoogleMaps
+    - GooglePlaces
 
 SPEC CHECKSUMS:
   FlexiblePageControl: 07f7765054f16b3f0bc3f14dfd95ab5f45817ea4
-  PryntTrimmerView: 53ac64053c7ce63cb3e27f54090f52da0734891d
-  SteviaLayout: 523469269059f2c6da02820bb2ff28a5fe0780aa
-  YPImagePicker: 8039f89ad79281545fa868486f32d9bf5d65ede1
+  GoogleMaps: cfee83da305b9aaeccf92c24ac79df11c3003492
+  GooglePlaces: 1e2a87bd9efee9623ee65d44ecc35ebfecd7b13c
 
-PODFILE CHECKSUM: d9dbb3114b2839bdce48fa8f1db0ff20b69dff80
+PODFILE CHECKSUM: e9b275962bf879f58e2a0936856e81df45128058
 
 COCOAPODS: 1.5.3

@@ -8,10 +8,16 @@
 
 import UIKit
 import MapKit
+import GoogleMaps
 import FlexiblePageControl
 
 class FootballFieldDetailView: UIViewController {
     
+    @IBAction func callButton(_ sender: Any) {
+        guard let number = URL(string: "tel://" + footballField.phoneNumber!) else { return }
+        UIApplication.shared.open(number)
+        
+    }
     @IBAction func backButton(_ sender: Any) {
         output.backButton()
     }
@@ -32,7 +38,7 @@ class FootballFieldDetailView: UIViewController {
     @IBOutlet weak var lockerLabel: UILabel!
     @IBOutlet weak var showerLabel: UILabel!
     @IBOutlet weak var streetLabel: UILabel!
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var mapView: GMSMapView!
     
     var footballField: FootballField!    
     var output: FootballFieldDetailViewOutput!
@@ -41,7 +47,7 @@ class FootballFieldDetailView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         output.viewIsReady()
-        mapView.delegate = self
+        
     }        
 }
 
@@ -55,14 +61,16 @@ extension FootballFieldDetailView: FootballFieldDetailViewInput {
         sizeFieldLabel.text = footballField.sizeField
         lockerLabel.text = footballField.lockerRoom
         showerLabel.text = footballField.shower
-        streetLabel.text = footballField.street        
+        streetLabel.text = footballField.street
         
-        let annotation = MKPointAnnotation()
-        let coordinateRegion = MKCoordinateRegion(center: footballField.location!, latitudinalMeters: (footballField.location?.latitude)!, longitudinalMeters: (footballField.location?.longitude)!)
-        annotation.coordinate = footballField.location!
-        annotation.title = footballField.name
-        mapView.setRegion(coordinateRegion, animated: true)
-        mapView.addAnnotation(annotation)        
+        let camera = GMSCameraPosition.camera(withLatitude: (footballField.location?.latitude)!, longitude: (footballField.location?.longitude)!, zoom: 13.0)
+        mapView.settings.allowScrollGesturesDuringRotateOrZoom = false
+        mapView.camera = camera
+        
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: (footballField.location?.latitude)!, longitude: (footballField.location?.longitude)!)
+        marker.title = footballField.name
+        marker.map = mapView
     }
     
     func show(footballField: FootballField) {
@@ -77,8 +85,4 @@ extension FootballFieldDetailView: FootballFieldDetailViewDataSourceOutput {
     }
 }
 
-extension FootballFieldDetailView: MKMapViewDelegate {
-    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        
-    }
-}
+

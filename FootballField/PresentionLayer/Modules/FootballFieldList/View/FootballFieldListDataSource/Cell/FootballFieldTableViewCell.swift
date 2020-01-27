@@ -18,6 +18,8 @@ class FootballFieldTableViewCell: UITableViewCell {
         
         self.imageField.layer.cornerRadius = imageField.frame.width / 2
         self.imageField.clipsToBounds = true
+        self.imageField.layer.borderWidth = 3
+        self.imageField.layer.borderColor = (UIColor(displayP3Red: 113/255, green: 185/255, blue: 74/255, alpha: 1.0)).cgColor
     }
 
 }

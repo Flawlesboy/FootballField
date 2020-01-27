@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         UIApplication.shared.statusBarStyle = .lightContent
+        
+        GMSServices.provideAPIKey("AIzaSyB6f9wsFE1w2dBqlv45MDn6ibUNpwEjIx4")
         
         UINavigationBar.appearance().barTintColor = UIColor(red: 113.0/255.0, green: 185.0/255.0, blue: 74.0/255.0, alpha: 1.0)
         

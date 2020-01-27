@@ -7,6 +7,7 @@ target 'FootballField' do
 
   # Pods for FootballField
   pod "FlexiblePageControl" 
-  pod 'YPImagePicker'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'  
 
 end

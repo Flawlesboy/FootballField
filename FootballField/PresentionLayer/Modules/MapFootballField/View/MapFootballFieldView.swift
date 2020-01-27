@@ -8,14 +8,17 @@
 
 import UIKit
 import MapKit
+import GoogleMaps
 
 class MapFootballFieldView: UIViewController {
     
+    var locationManager = CLLocationManager()
     
     @IBAction func backButton(_ sender: Any) {
         output.backButton()
     }
-    @IBOutlet weak var locationFootballField: MKMapView!
+    @IBOutlet weak var locationFootballField: GMSMapView!
+    
     var output: MapFootballFieldViewOutput!
     var footballField: FootballField!
 
@@ -27,12 +30,19 @@ class MapFootballFieldView: UIViewController {
 
 extension MapFootballFieldView: MapFootballFieldViewInput {
     func setupInitialState() {
-        let annotation = MKPointAnnotation()
-        let coordinateRegion = MKCoordinateRegion(center: footballField.location!, latitudinalMeters: (footballField.location?.latitude)!, longitudinalMeters: (footballField.location?.longitude)!)
-        annotation.coordinate = footballField.location!
-        annotation.title = footballField.name
-        locationFootballField.setRegion(coordinateRegion, animated: true)
-        locationFootballField.addAnnotation(annotation)
+
+        let camera = GMSCameraPosition.camera(withLatitude: (footballField.location?.latitude)!, longitude: (footballField.location?.longitude)!, zoom: 15.0)
+        locationFootballField.camera = camera
+        locationFootballField.isMyLocationEnabled = true
+        locationFootballField.settings.myLocationButton = true
+        locationFootballField.padding = UIEdgeInsets(top: 0, left: 0, bottom: 30, right: 20)
+        self.locationManager.startUpdatingLocation()
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: (footballField.location?.latitude)!, longitude: (footballField.location?.longitude)!)
+        marker.title = footballField.name
+        marker.map = locationFootballField
     }
     
     func show(footballField: FootballField) {
